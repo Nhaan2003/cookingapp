@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Cooking Tutorial</string>
+
+    <!-- Đăng nhập / Đăng ký -->
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="confirm_password">Nhập lại mật khẩu</string>
+    <string name="login">Đăng nhập</string>
+    <string name="register">Đăng ký</string>
+    <string name="username">Tên người dùng</string>
+    <string name="don_t_have_an_account_register">Chưa có tài khoản? Đăng ký</string>
+    <string name="already_have_an_account_login">Đã có tài khoản? Đăng nhập</string>
+    <string name="create_an_account">Tạo tài khoản</string>
+    <string name="cooking_tutorial">Cooking Tutorial</string>
+
+    <!-- Điều hướng dưới -->
+    <string name="recipes">Công thức</string>
+    <string name="shopping_list">Danh sách mua</string>
+    <string name="add_recipe">Thêm công thức</string>
+    <string name="account">Tài khoản</string>
+
+    <!-- Danh sách công thức -->
+    <string name="search_recipes">Tìm theo tên công thức, tên nguyên liệu</string>
+    <string name="view_recipe">Xem công thức</string>
+    <string name="add_to_shopping_list">Thêm vào danh sách mua</string>
+    <string name="no_recipes_found">Không tìm thấy công thức</string>
+    <string name="no_recipes_in_category">Không có công thức nào trong danh mục này</string>
+    <string name="empty_shopping_list">Danh sách mua sắm của bạn đang trống\nThêm nguyên liệu từ công thức để bắt đầu</string>
+    <string name="add_item">Thêm mục</string>
+
+    <!-- Chi tiết công thức -->
+    <string name="description">Mô tả</string>
+    <string name="ingredients">Nguyên liệu</string>
+    <string name="cooking_steps">Các bước nấu</string>
+    <string name="start_cooking">Bắt đầu nấu</string>
+    <string name="add_all_to_shopping">Thêm tất cả vào danh sách mua</string>
+    <string name="favorite">Yêu thích</string>
+    <string name="recipe_image">Ảnh món ăn</string>
+    <string name="edit">Chỉnh sửa</string>
+    <string name="delete">Xoá</string>
+    <string name="share">Chia sẻ</string>
+    <string name="exit_cooking_mode">Thoát chế độ nấu ăn</string>
+
+    <!-- Chế độ nấu ăn -->
+    <string name="previous">Trước</string>
+    <string name="next">Tiếp</string>
+    <string name="mark_completed">Đánh dấu đã hoàn thành</string>
+    <string name="step_of_total">Bước %1$d trên %2$d</string>
+    <string name="step_image">Hình minh họa bước làm</string>
+    <string name="step_description_hint">Mô tả bước làm...</string>
+
+    <!-- Thêm công thức -->
+    <string name="add_new_recipe">Thêm công thức mới</string>
+    <string name="recipe_name">Tên món</string>
+    <string name="cooking_time_e_g_30_mins">Thời gian nấu (VD: 30 phút)</string>
+    <string name="category">Loại món</string>
+    <string name="add_image">Thêm ảnh</string>
+    <string name="add">Thêm</string>
+    <string name="save_recipe">Lưu công thức</string>
+    <string name="ingredient">Nguyên liệu</string>
+    <string name="qty">Số lượng</string>
+    <string name="unit">Đơn vị</string>
+    <string name="remove_ingredient">Xoá nguyên liệu</string>
+    <string name="step_description">Mô tả bước làm</string>
+    <string name="remove_step">Xoá bước</string>
+    <string name="ingredient_name">Tên nguyên liệu</string>
+    <string name="quantity">Số lượng</string>
+    <string name="select_image">Chọn ảnh</string>
+    <string name="recipe_description">Mô tả công thức</string>
+    <string name="cooking_time_hint">Thời gian nấu (VD: 30 phút)</string>
+    <string name="add_ingredient">Thêm nguyên liệu</string>
+    <string name="steps">Các bước</string>
+    <string name="add_step">Thêm bước</string>
+    <string name="submit_recipe">Đăng công thức</string>
+    <string name="colorTextSecondary">#757575</string>
+
+    <!-- Danh sách mua sắm -->
+    <string name="your_shopping_list_is_empty">Danh sách mua sắm của bạn đang trống</string>
+    <string name="clear_purchased">Xoá các món đã mua</string>
+
+    <!-- Tài khoản -->
+    <string name="my_account">Tài khoản của tôi</string>
+    <string name="profile_image">Ảnh đại diện</string>
+    <string name="my_favorite_recipes">Công thức yêu thích</string>
+    <string name="you_haven_t_added_any_favorite_recipes_yet">Bạn chưa thêm công thức nào vào mục yêu thích</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="remove_from_favorites">Xoá khỏi yêu thích</string>
+    <string name="app_logo">Biểu tượng ứng dụng</string>
+</resources>
