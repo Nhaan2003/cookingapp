@@ -4,6 +4,7 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.util.Log;
 
 import com.example.cookingtutorialapp.database.DatabaseHelper;
 import com.example.cookingtutorialapp.models.Ingredient;
@@ -102,6 +103,11 @@ public class IngredientDAO {
         db.close();
     }
 
+    /**
+     * Lấy danh sách mua sắm của người dùng và sắp xếp theo tên nguyên liệu
+     * @param userId ID của người dùng
+     * @return Danh sách nguyên liệu đã sắp xếp theo tên
+     */
     public List<Ingredient> getShoppingList(int userId) {
         List<Ingredient> shoppingList = new ArrayList<>();
 
@@ -109,7 +115,8 @@ public class IngredientDAO {
                 "FROM " + DatabaseHelper.TABLE_SHOPPING_LIST + " s " +
                 "INNER JOIN " + DatabaseHelper.TABLE_INGREDIENTS + " i ON s." +
                 DatabaseHelper.COLUMN_INGREDIENT_ID + "=i." + DatabaseHelper.COLUMN_ID + " " +
-                "WHERE s." + DatabaseHelper.COLUMN_USER_ID + "=" + userId;
+                "WHERE s." + DatabaseHelper.COLUMN_USER_ID + "=" + userId +
+                " ORDER BY " + DatabaseHelper.COLUMN_INGREDIENT_NAME + " ASC";
 
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         Cursor cursor = db.rawQuery(selectQuery, null);
@@ -158,5 +165,30 @@ public class IngredientDAO {
         }
 
         return purchased;
+    }
+
+    /**
+     * Clears all shopping list items for a specific user
+     * @param userId the ID of the user
+     * @return true if operation was successful, false otherwise
+     */
+    public boolean clearShoppingList(int userId) {
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        try {
+            // Delete all items from shopping list for this user
+            int rowsDeleted = db.delete(
+                    DatabaseHelper.TABLE_SHOPPING_LIST,
+                    DatabaseHelper.COLUMN_USER_ID + " = ?",
+                    new String[]{String.valueOf(userId)}
+            );
+
+            // Return true if at least one row was deleted or if the shopping list was already empty
+            return true;
+        } catch (Exception e) {
+            Log.e("IngredientDAO", "Error clearing shopping list: " + e.getMessage());
+            return false;
+        } finally {
+            db.close();
+        }
     }
 }
