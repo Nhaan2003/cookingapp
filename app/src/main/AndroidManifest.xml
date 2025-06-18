@@ -51,12 +51,6 @@
             android:exported="false"
             android:screenOrientation="portrait" />
 
-        <!-- Activity chế độ nấu ăn -->
-        <activity
-            android:name=".activities.CookingModeActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-
         <!-- FileProvider cho việc chụp ảnh và chọn ảnh -->
         <provider
             android:name="androidx.core.content.FileProvider"
