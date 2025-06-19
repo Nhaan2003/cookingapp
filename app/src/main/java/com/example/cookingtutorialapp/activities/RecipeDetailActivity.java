@@ -223,8 +223,6 @@ public class RecipeDetailActivity extends AppCompatActivity {
 
     /**
      * Thiết lập RecyclerView hiển thị các bước nấu ăn theo chế độ
-     *
-     * @param cookingMode true nếu đang ở chế độ nấu ăn, false nếu đang ở chế độ xem thường
      */
     private void setupStepsRecyclerView(boolean cookingMode) {
         rvSteps.setLayoutManager(new LinearLayoutManager(this));
